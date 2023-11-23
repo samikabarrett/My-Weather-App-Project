@@ -9,6 +9,14 @@ a {
   color: #385170;
 }
 
+strong {
+  font-size: 20px;
+}
+
+p {
+  font-size: 12px;
+}
+
 .weather-app {
   background-color: #ffffff;
   max-width: 600px;

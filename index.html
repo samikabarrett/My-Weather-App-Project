@@ -12,15 +12,15 @@
   <body>
     <div class="weather-app"> 
     <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+      <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input" />
         <input type="submit" value="search" class="search-form-button" />
       </form>
     </header>
     <main>
         
         <div>
-      <h1 class="weather-app-city">Paris</h1>
+      <h1 class="weather-app-city" id="weather-app-city">Paris</h1>
       <h2 class="weather-app-date-time">Thursday, 23 November, 14:49</h2>
     <h3 class=weather-app-emoji>⛅️</h3>
     </div>
@@ -29,7 +29,7 @@
         <div class="tempreture">
         <strong>14 °C</strong>
         <br />
-        Scattered clouds</div> <div class="wind">
+        Scattered Clouds</div> <div class="wind">
         <strong>3.13km/h</strong>
         <br />
          Wind</div><div class="humidity">
@@ -52,5 +52,6 @@
         >Netlify
       </a>
     </footer></div>
+    <script src="src/index.js"></script>
   </body>
 </html>
