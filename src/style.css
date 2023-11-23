@@ -14,7 +14,11 @@ strong {
 }
 
 p {
-  font-size: 12px;
+  font-size: 15px;
+}
+
+img {
+  width: 150px;
 }
 
 .weather-app {
