@@ -19,25 +19,22 @@
       </form>
     </header>
     <main>
-        
-        <div>
-      <h1 class="weather-app-city" id="weather-app-city"></h1>
-      <h2 class="weather-app-date-time">Thursday, 23 November, 14:49</h2>
-    <h3 class=weather-app-emoji>⛅️</h3>
-    </div>
+      <h1 class="weather-app-city" id="city"></h1>
+      <h2 class="weather-app-date-time"><span id=date-time> </span></h2>
+      <h3 class=weather-app-emoji>⛅️</h3>
       <div class="weather-app-data">
-        <p class="weather-app-details">
-        <div class="temperature">
+        <p>
+        <div>
         <strong><span id="temperature">14</span>°C</strong>
         <br />
-        Scattered Clouds</div> <div class="wind">
-        <strong>3.13km/h</strong>
+        <span id="description"> </span> </div> 
+        <div class="wind"> <strong><span id="wind-speed"></span></strong>
         <br />
-         Wind</div><div class="humidity">
-        <strong>66%</strong>
-        <br />
+        Wind</div>
+        <div class="humidity"><strong id="humidity"></strong> <br />
          Humidity</div>
-      </p></div>
+      </p>
+    </div>
     </main>
     <footer>
       Coded by
@@ -47,10 +44,7 @@
       open-sourced on <a
         href="https://github.com/samikabarrett/My-Weather-App-Project"
         target="_blank"
-      >Github</a>
-      and hosted on
-      <a href="https://earthforecastapp.netlify.app/" target="_blank"
-        >Netlify
+      >Github</a> and hosted on <a href="https://earthforecastapp.netlify.app/" target="_blank"> Netlify
       </a>
     </footer></div>
     <script src="src/index.js"></script>
