@@ -12,41 +12,41 @@
   <body>
     <div class="weather-app"> 
     <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
+      <form class="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+        <input type="submit" value="search" class="search-form-button" />
       </form>
     </header>
     <main>
+        
         <div>
-      <h1>Paris</h1>
-      <h2>Thursday, 23 November, 14:49</h2></div>
-      <p>
+      <h1 class="weather-app-city">Paris</h1>
+      <h2 class="weather-app-date-time">Thursday, 23 November, 14:49</h2>
+    <h3 class=weather-app-emoji>⛅️</h3>
+    </div>
+      <div class="weather-app-data">
+        <p class="weather-app-details">
         <div class="tempreture">
-        ⛅️14°C
+        <strong>14 °C</strong>
         <br />
         scattered clouds</div> <div class="wind">
-        <br />
         Wind
         <br />
-        3.13km/h</div><div class="humidity">
-        <br />
+         <strong>3.13km/h</strong></div><div class="humidity">
         Humidity
         <br />
-        66%</div>
-      </p>
+         <strong>66%</strong></div>
+      </p></div>
     </main>
     <footer>
       Coded by
       <a href="https://github.com/samikabarrett" target="_blank">
         Samika Barrett</a
       >
-      open-sourced on<a
+      open-sourced on <a
         href="https://github.com/samikabarrett/My-Weather-App-Project"
         target="_blank"
-      >
-        Github</a
-      >
+      >Github</a>
       and hosted on
       <a href="https://earthforecastapp.netlify.app/" target="_blank"
         >Netlify
