@@ -10,7 +10,9 @@ function refreshWeather(response) {
   let iconElement = document.querySelector("#weather-app-emoji");
 
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-emoji"/>`;
-  cityElement.innerHTML = response.data.city;
+  cityElement.innerHTML = `<span class="material-symbols-outlined">
+location_on
+</span>${response.data.city}`;
   dateTimeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
@@ -34,7 +36,17 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  return `${day} ${hours}:${minutes}`;
+
+  let options = {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  };
+  let formattedDate = date.toLocaleDateString("en-AU", options);
+
+  return formattedDate;
 }
 
 function searchCity(city) {
